@@ -23,8 +23,138 @@ p{
     line-height: 1.4;
     font-size: 13.5px;
 }
+
+/*for SmartPhones*/
+@media only screen and (min-width: 300px)
+{
+
+    body {
+        position: relative;
+    }
+    /*middle part where our resume is*/
+    .wrapper{
+        height: auto;
+        width: 100%;
+    }
+    .real_resume{
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .name_and_tag{
+        width: 100%;
+        height: wrap;
+        margin-bottom: 50px;
+    }
+    .name_and_tag h1{
+        font-size: 45px;
+        font-family: inter;
+        color: white;
+        letter-spacing: 4px;
+        padding: 20px 0px 20px;
+        font-weight: 200;
+        text-align: center;
+    }
+    .name_and_tag h2{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        color:#8b8b8b;
+    }
+    .tem_profile_pic{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        min-width: 300px
+        
+    }
+    .about_me{
+        margin-top: 80px;
+        width: 100%;
+        height: wrap;
+        padding: 10px 0px 10px;
+        margin-bottom: 30px;
+    }
+    
+    .about_me h2{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .about_me p{
+        padding-top: 10px 10px 0px;
+        text-align: center;
+        font-size: 18px;
+        color:#dfdfdf;
+    }
+    .break{
+        margin: 0 auto;
+        width: 80%;
+        height: 1px;
+        border: none;
+        border-radius: 5px;
+        background-color: #505050;
+    }
+    .contact_div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 0 0 0;
+        background-color: #505050;
+        text-align: left;
+    }
+
+    .right_side_div{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+        margin-top: 30px;
+        background-color: red;
+    }
+    .visit_counter{
+        width: 30%;
+        height: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        background-color: darkslategray;
+    }
+    /* visiters numbers styled here*/
+    .visit_counter h3{
+        padding-top: 30%;
+        padding-bottom: 30%;
+        font-size: 60px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 20px;
+    }
+    /* how many visited this week is styled here*/
+    .this_week{
+        padding-top: 13%;
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .this_week h3{
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+}
+
+
 /* for Tablets*/
 @media only screen and (min-width: 700px) {
+    body{
+        position: static;
+    }
     *middle part where our resume is*/
     .wrapper{
         width: 100%;
@@ -40,6 +170,7 @@ p{
     }
     /* resume background(for grey and black background and front(for text and all images)*/
     .background, .real_resume{
+        padding: 0;
         width: 100%;
        height: 100%;
         position:absolute;
@@ -82,6 +213,7 @@ p{
     }
     /* Name edit*/
     .name_and_tag h1{
+        text-align: left;
         font-family: inter;
         font-weight: 200;
         background-color: black;
@@ -95,6 +227,7 @@ p{
    
     /* Tag edit*/
     .name_and_tag h2{
+        text-align: left;
         text-transform: capitalize;
         font-family: inter;
         font-weight: 200;
@@ -123,21 +256,26 @@ p{
     }
     /* temp profile picture */
     .tem_profile_pic{
-        width: 100%;
+        margin: 0;
+        min-width: 100%;
         background-color: black;
     }
     /* About Me text */
     .about_me{
-        padding: 0px 20px   0px;
+        padding: 0px 0px 0px  0px;
         margin-top: 20px;
         margin-bottom: 50px;
+        width: 100%;
     }
     .about_me h2{
         text-align: center;
+        font-size: 25px;
     }
     .about_me p{
         text-align: left;
         margin-top: 10px;
+        font-size: 14px;
+        padding: 10px;
     }
     /* Breaker div*/
     .break{
@@ -148,9 +286,10 @@ p{
     }
     /* contact is styled here*/
     .contact_div{
+        position: static;
         margin-top: 20px;
         width: 100%;
-        padding-left: 20px;
+        
     }
     .contact_info_div{
         margin-top: 40px;
@@ -177,6 +316,8 @@ p{
     }
     /* Right side box of all sub elements*/
     .right_side_div{
+        margin-top: 0;
+        padding: 0 0 0 0;
         margin-left: 55px;
         margin-right: 0;
         height: wrap;
@@ -250,6 +391,9 @@ p{
 /*********************************************************************************************************************************************************************88*/
 /* for PC and Laptops*/
 @media only screen and (min-width: 1000px){
+    body{
+        position: static;
+    }
     /*middle part where our resume is*/
     .wrapper{
         width: 800px;
@@ -263,6 +407,7 @@ p{
     }
     /* resume background(for grey and black background and front(for text and all images)*/
     .background, .real_resume{
+        padding: 0;
         width: 100%;
        height: 100%;
         position:absolute;
@@ -305,6 +450,7 @@ p{
     }
     /* Name edit*/
     .name_and_tag h1{
+        text-align: left;
         font-family: inter;
         font-weight: 200;
         background-color: black;
@@ -356,12 +502,15 @@ p{
     }
     /* About Me text */
     .about_me{
-        padding: 0px 20px   0px;
+        width: 100%;
+        height: wrap;
+        padding: 0px 0px 0px  0px;
         margin-top: 20px;
         margin-bottom: 50px;
     }
     .about_me h2{
         text-align: center;
+        font-size: 25px;
     }
     .about_me p{
         text-align: left;
@@ -376,9 +525,10 @@ p{
     }
     /* contact is styled here*/
     .contact_div{
+        position: static;
         margin-top: 20px;
         width: 100%;
-        padding-left: 20px;
+        padding: 0 0 0 0;
     }
     .contact_info_div{
         margin-top: 40px;
@@ -409,6 +559,8 @@ p{
     }
     /* Right side box of all sub elements*/
     .right_side_div{
+        margin-top: 0;
+        padding: 0 0 0 0;
         margin-left: 55px;
         margin-right: 10px;
         height: wrap;
