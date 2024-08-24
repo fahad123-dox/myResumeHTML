@@ -30,10 +30,11 @@ p{
 
     body {
         position: relative;
+        margin-bottom: 330px;
     }
     /*middle part where our resume is*/
     .wrapper{
-        height: auto;
+        height: wrap;
         width: 100%;
     }
     .real_resume{
@@ -96,15 +97,39 @@ p{
         background-color: #505050;
     }
     .contact_div{
-        position: absolute;
+        display: none;
+    }
+    .footer_contact{
+        
+        height: wrap;
         bottom: 0;
-        left: 0;
+        margin-bottom: -290px;
+        position:absolute;
         width: 100%;
-        padding: 0 0 0 0;
-        background-color: #505050;
+        background-color: #171717;
         text-align: left;
     }
-
+    .footer_contact_div{
+        height: wrap;
+        bottom: 0;
+        position:absolute;
+        width: 100%;
+        background-color: #171717;
+        text-align: left;
+    }
+    .footer_contact_div h2{
+        margin-top: 30px;
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 50px;
+    }
+        .footer_contact_title{
+            padding-left: 10px;
+        }
+        .footer_contact_info_div p{
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
     .right_side_div{
         margin-top: 10px;
         margin-bottom: 50px;
@@ -112,7 +137,6 @@ p{
         height: auto;
         padding: 0 0 0 0;
         margin-bottom: 10px;
-        background-color: red;
     }
     .visit_counter{
         width: 30%;
@@ -181,6 +205,10 @@ p{
 @media only screen and (min-width: 700px) {
     body{
         position: static;
+        margin-bottom: 0;
+    }
+    .footer_contact{
+        display: none;
     }
     *middle part where our resume is*/
     .wrapper{
@@ -313,15 +341,24 @@ p{
     }
     /* contact is styled here*/
     .contact_div{
+        display: block;
         position: static;
         margin-top: 20px;
         width: 100%;
         
     }
+    .contact_info_div p{
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .contact_div h2{
+        text-align: center;
+    }
     .contact_info_div{
         margin-top: 40px;
     }
     .contact_title{
+        padding-left: 10px;
         margin-top: 20px;
         text-transform: capitalize;
         font-size: 16px;
@@ -421,6 +458,10 @@ p{
 @media only screen and (min-width: 1000px){
     body{
         position: static;
+        margin-bottom: 0;
+    }
+    .footer_contact{
+        display: none;
     }
     /*middle part where our resume is*/
     .wrapper{
