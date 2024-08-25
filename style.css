@@ -103,10 +103,9 @@ p{
         
         height: wrap;
         bottom: 0;
-        margin-bottom: -290px;
+        margin-bottom: -330px;
         position:absolute;
         width: 100%;
-        background-color: #171717;
         text-align: left;
     }
     .footer_contact_div{
@@ -124,7 +123,7 @@ p{
         margin-bottom: 50px;
     }
         .footer_contact_title{
-            padding-left: 10px;
+            padding-left: 10px; 
         }
         .footer_contact_info_div p{
             margin-bottom: 10px;
