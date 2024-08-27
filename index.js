@@ -14,22 +14,18 @@ var callAPI = () => {
         redirect: 'follow'
     };
 
-    // Make the API call with the specified options and handle the response
-    fetch("https://xxxxxxx/xxxxxxxxxxxxxxxx/xxxxxxxxxxxx/xx", requestOptions)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();  // Parse the JSON response
-    })
-    .then(result => {
-        console.log('API Response:', result);  // Log the response for debugging
-        
-        // Parse the body string to JSON and then update the counter with the count value
-        let parsedBody = JSON.parse(result.body);
-        counterElement.innerHTML = parsedBody.count;  // Update the counter with the count value from the API response
-    })
-    .catch(error => console.log('Error:', error));
+    // make API call with parameters and use promises to get response
+    fetch("https://xxxxxxxxxxxxx/xxxxxxxxxxxxxxxxx/xxxxxxx", requestOptions)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(result => {
+            counterElement.innerHTML = result.count;  // Corrected this line
+        })
+        .catch(error => console.log('Error:', error));
 };
 
 // Call the API to update the counter when the page loads
