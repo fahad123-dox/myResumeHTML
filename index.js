@@ -15,7 +15,7 @@ var callAPI = () => {
     };
 
     // make API call with parameters and use promises to get response
-    fetch("https://9gxsw6cj3g.execute-api.ap-south-1.amazonaws.com/dev", requestOptions)
+    fetch("https://xxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxx", requestOptions)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
