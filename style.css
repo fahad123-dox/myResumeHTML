@@ -2,40 +2,6 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-=======
-li {
-    display: flex;
-    align-items: center;
-}
-.completed, .in-progress {
-    font-size: 0.7em; /* Smaller font size */
-    font-weight: normal;
-    margin-left: 8px; /* Adds a small space between the text and status */
-    display: inline-block; /* Ensures it stays on the same line */
-    padding: 1px 4px; /* Smaller padding for compact height */
-    border-radius: 10px; /* Smaller radius for a compact look */
-    vertical-align: middle; /* Aligns the label vertically with the text */
-    border-width: 2px;
-    border-style: solid;
-}
-
-.completed {
-    color: #4CAF50;
-    background-color: rgba(0, 0, 0, 1);
-    border-color: #4CAF50; /* Green for completed */
-}
-
-.in-progress {
-    color: #2196F3;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: #2196F3; /* Blue for in progress */
-}
-
-
-
-
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
 body{
     background-color: black;
     width: 100%;
@@ -57,32 +23,6 @@ p{
     line-height: 1.4;
     font-size: 13.5px;
 }
-<<<<<<< HEAD
-=======
-a {
-    color: white; /* Change link color to white */
-    text-decoration: none; /* Remove the underline */
-}
-
-a:hover {
-    color: #fffb00; /* Keeps the link yellow shade when hovered */
-    text-decoration: none; /* Remove underline on hover as well */
-}
-
-a:active {
-    font-weight: normal;
-    color: white; /* Keeps the link white when clicked */
-    text-decoration: none; /* Remove underline on click */
-}
-
-a:focus {
-    color: white; /* Keeps the link white when focused */
-    text-decoration: none; /* Remove underline on focus */
-}
-
-
-
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
 
 /*for SmartPhones*/
 @media only screen and (min-width: 300px)
@@ -763,20 +703,5 @@ a:focus {
 
     }
 
-<<<<<<< HEAD
     
 }
-=======
-
-
-
-    
-}
-
-
-.error {
-    padding: 10px;             /* Padding for spacing around the text */
-    border-radius: 5px;        /* Rounded corners */
-    font-weight: bold;         /* Bold text to make it stand out */
-}
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
