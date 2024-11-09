@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-=======
 li {
     display: flex;
     align-items: center;
@@ -35,7 +33,6 @@ li {
 
 
 
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
 body{
     background-color: black;
     width: 100%;
@@ -57,15 +54,13 @@ p{
     line-height: 1.4;
     font-size: 13.5px;
 }
-<<<<<<< HEAD
-=======
 a {
     color: white; /* Change link color to white */
     text-decoration: none; /* Remove the underline */
 }
 
 a:hover {
-    color: #fffb00; /* Keeps the link yellow shade when hovered */
+    color: #fffb00; /* Keeps the link white when hovered */
     text-decoration: none; /* Remove underline on hover as well */
 }
 
@@ -82,7 +77,6 @@ a:focus {
 
 
 
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
 
 /*for SmartPhones*/
 @media only screen and (min-width: 300px)
@@ -763,20 +757,5 @@ a:focus {
 
     }
 
-<<<<<<< HEAD
     
 }
-=======
-
-
-
-    
-}
-
-
-.error {
-    padding: 10px;             /* Padding for spacing around the text */
-    border-radius: 5px;        /* Rounded corners */
-    font-weight: bold;         /* Bold text to make it stand out */
-}
->>>>>>> 85f849db4982998621585f52a9c0081d8587e14f
