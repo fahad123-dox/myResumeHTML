@@ -72,8 +72,8 @@
 <p><strong>4. </strong>How many users can it handle?</p>
 <p><strong>Answer: </strong>The system can handle a large number of concurrent users, thanks to the scalability of serverless components. CloudFront can support millions of users accessing the website simultaneously. However, it does rely on a single Lambda function and one DynamoDB table, so the IOPS (Input/Output Operations Per Second) of Lambda and DynamoDB might impose limits under very heavy load:</p>
 <ul>
-  <li><strong>Lambda IOPS:</strong> AWS Lambda can handle thousands of requests per second (depending on the function's configuration and allocated resources). However, there are limits on concurrency (default limit is 1,000 concurrent executions per AWS account). You can request a higher limit if needed.</li>
-  <li><strong>DynamoDB IOPS:</strong> DynamoDB can handle up to 40,000 read capacity units (RCUs) and 40,000 write capacity units (WCUs) in a provisioned capacity model. In on-demand mode, DynamoDB can scale automatically to accommodate unpredictable workloads. However, exceeding these limits could result in throttling or slower performance.</li>
+  <li><strong>Lambda IOPS:</strong> I have default limit of 1000 concurrent executions because i didn't requested AWS to increse this limit
+  <li><strong>DynamoDB IOPS:</strong> I am using DynamoDB in on-demand mode which is the default mode so it doesn’t have any IOPS limit.
 </ul>
 
 <p><strong>5. </strong>What are the costs associated with this architecture?</p>
