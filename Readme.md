@@ -44,8 +44,9 @@
 <p><strong>Note:</strong> Make sure to create the certificate in the <em>us-east-1</em> region, as AWS CloudFront only supports certificates from that region.</p>
 <img src="My-resume-code/my-resume-website-documentation/aws certificate manager/create-a-public-ssl-tsl-certificate-to-use-with-cloudfront-1.jpg" alt="Obtaining an SSL/TLS certificate">
 
-<p><strong>Step 10</strong>: I added genrated CNAME to DNS record in Route53.</p>
-<img src="My-resume-code\my-resume-website-documentation\aws certificate manager\add-both-records.jpg">
+<p><strong>Step 10</strong>: I added the generated CNAME record to the DNS configuration in Route 53.</p>
+<img src="My-resume-code/my-resume-website-documentation/aws certificate manager/add-both-records.jpg">
+
 
 <p><strong>Step 11</strong>: After that, I created a CloudFront distribution, added my S3 bucket as an origin, and attached the SSL/TLS certificate obtained from AWS Certificate Manager.</p>
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-1-choose-bucket-endpoint.jpg">
