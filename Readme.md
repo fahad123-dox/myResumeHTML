@@ -44,6 +44,9 @@
 <p><strong>Note:</strong> Make sure to create the certificate in the <em>us-east-1</em> region, as AWS CloudFront only supports certificates from that region.</p>
 <img src="My-resume-code/my-resume-website-documentation/aws certificate manager/create-a-public-ssl-tsl-certificate-to-use-with-cloudfront-1.jpg" alt="Obtaining an SSL/TLS certificate">
 
+<p><strong>Step 10</strong>: I added genrated CNAME to DNS record in Route53.</p>
+<img src="My-resume-code\my-resume-website-documentation\aws certificate manager\add-both-records.jpg">
+
 <p><strong>Step 10</strong>: After that, I created a CloudFront distribution, added my S3 bucket as an origin, and attached the SSL/TLS certificate obtained from AWS Certificate Manager.</p>
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-1-choose-bucket-endpoint.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-2-change-viewer-protocol-to-http-to-https-.jpg">
@@ -51,7 +54,6 @@
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-4-choose-index html as default root obj.jpg">
 
 <p><strong>Step 11</strong>: Lastly, I added two DNS records in Route 53 to point the custom domain to the CloudFront distribution.</p>
-<img src="My-resume-code\my-resume-website-documentation\aws certificate manager\add-both-records.jpg">
 <img src="My-resume-code\my-resume-website-documentation\route53\add-route-to-your-cloud-formation-for-root-domain.jpg">
 <img src="My-resume-code\my-resume-website-documentation\route53\add-route-to-your-cloud-formation-for-subdomain.jpg">
 
