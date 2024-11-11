@@ -1,5 +1,6 @@
 <h1>AWS CLOUD RESUME</h1>
 <p>This is the overview of how i created my aws resume</p>
+<p>my webiste link <em>www.fahadkhan.link</em></p>
 
 <h2>Architectural diagram of my project</h2>
 <img src="My-resume-code\my-resume-website-documentation\architectural diagram\diagram.png">
