@@ -50,10 +50,14 @@
 <img src="My-resume-code\my-resume-website-documentation\route53\add-route-to-your-cloud-formation-for-subdomain.jpg">
 
 <p><strong>Step 11</strong>: After that, I created a CloudFront distribution, added my S3 bucket as an origin, and attached the SSL/TLS certificate obtained from AWS Certificate Manager.</p>
-<img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-1-choose-bucket-endpoint.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-2-change-viewer-protocol-to-http-to-https-.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-3-choose-aws-certificate-manager-created-certificate.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-4-choose-index html as default root obj.jpg">
+
+
+<p><strong>Step 12</strong>: In the end i added above created cloudfront distribution to route53 so that it can redirect traffic to the cloudfront distribution</p>
+<img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-1-choose-bucket-endpoint.jpg">
+
 
 <h2>Some General Questions</h2>
 
