@@ -53,3 +53,30 @@
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-2-change-viewer-protocol-to-http-to-https-.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-3-choose-aws-certificate-manager-created-certificate.jpg">
 <img src="My-resume-code\my-resume-website-documentation\cloud front\create-cloudfront-distribution-4-choose-index html as default root obj.jpg">
+
+<h2>Some General Questions</h2>
+
+<p><strong>1. </strong>What kind of architecture is this?</p>
+<p><strong>Answer: </strong>This is a serverless architecture, meaning there are no servers to manage or maintain. It scales automatically based on demand and doesn't require human intervention for the infrastructure.</p>
+
+<p><strong>2. </strong>What's the availability of this workload?</p>
+<p><strong>Answer: </strong>This workload uses CloudFront, which makes it easily accessible and available worldwide with low latency. CloudFront ensures high availability and performance, reducing latency by serving content from edge locations near the user.</p>
+
+<p><strong>3. </strong>Is it resilient?</p>
+<p><strong>Answer: </strong>Yes, this architecture is resilient. CloudFront provides high availability, with a global distribution that ensures content is always available. The S3 standard storage class also offers 99.9% durability, while Lambda functions are designed to automatically scale to meet demand.</p>
+
+<p><strong>4. </strong>How many users can it handle?</p>
+<p><strong>Answer: </strong>The system can handle a large number of concurrent users, thanks to the scalability of serverless components. CloudFront can support millions of users accessing the website simultaneously. However, it does rely on a single Lambda function and one DynamoDB table, so the IOPS (Input/Output Operations Per Second) of Lambda and DynamoDB might impose limits under very heavy load:</p>
+<ul>
+  <li><strong>Lambda IOPS:</strong> AWS Lambda can handle thousands of requests per second (depending on the function's configuration and allocated resources). However, there are limits on concurrency (default limit is 1,000 concurrent executions per AWS account). You can request a higher limit if needed.</li>
+  <li><strong>DynamoDB IOPS:</strong> DynamoDB can handle up to 40,000 read capacity units (RCUs) and 40,000 write capacity units (WCUs) in a provisioned capacity model. In on-demand mode, DynamoDB can scale automatically to accommodate unpredictable workloads. However, exceeding these limits could result in throttling or slower performance.</li>
+</ul>
+
+<p><strong>5. </strong>What are the costs associated with this architecture?</p>
+<p><strong>Answer: </strong>The costs are primarily based on the usage of AWS services like CloudFront, Lambda, and DynamoDB. CloudFront pricing is based on data transfer and requests, Lambda is priced based on the number of executions and duration of the function, and DynamoDB costs are based on read/write capacity and storage. It's important to monitor usage to avoid unexpected costs.</p>
+
+<p><strong>6. </strong>How secure is this architecture?</p>
+<p><strong>Answer: </strong>This architecture is secure as it leverages AWS security features such as IAM roles for access control, SSL/TLS encryption for secure communication, and automated backups for DynamoDB. AWS also provides tools like CloudWatch and CloudTrail to monitor and audit activities for compliance.</p>
+
+<p><strong>7. </strong>How does the architecture scale?</p>
+<p><strong>Answer: </strong>Serverless components such as Lambda, CloudFront, and DynamoDB automatically scale based on demand. Lambda scales the number of executions to match incoming requests, CloudFront caches content at edge locations to handle large numbers of users, and DynamoDB automatically scales in on-demand mode to handle fluctuations in workload.</p>
